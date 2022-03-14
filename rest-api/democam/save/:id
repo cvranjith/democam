@@ -1,0 +1,6 @@
+begin
+delete tb_img where sess = :id;
+insert into tb_img (sess,img_data) values (:id,:body_text);
+htp.p('{"stat":"success"}');
+exception when others then htp.p(sqlerrm);
+end;
