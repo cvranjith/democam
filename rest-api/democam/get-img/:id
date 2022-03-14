@@ -1,0 +1,3 @@
+begin
+pr_get_img(:id);
+end;
